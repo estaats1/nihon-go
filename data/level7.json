@@ -1,0 +1,122 @@
+{
+	"1": {
+		"kanji": "午",
+		"pronunciation": {
+			"on-yomi": "ご",
+			"kun-yomi": ""
+		},
+		"meaning": "noon"
+	},
+	"2": {
+		"kanji": "後",
+		"pronunciation": {
+			"on-yomi": "ご",
+			"kun-yomi": "あと、うし"
+		},
+		"meaning": "after"
+	},
+	"3": {
+		"kanji": "前",
+		"pronunciation": {
+			"on-yomi": "ぜん",
+			"kun-yomi": "まえ"
+		},
+		"meaning": "before"
+	},
+	"4": {
+		"kanji": "名",
+		"pronunciation": {
+			"on-yomi": "めい",
+			"kun-yomi": "な"
+		},
+		"meaning": "name"
+	},
+	"5": {
+		"kanji": "白",
+		"pronunciation": {
+			"on-yomi": "はく",
+			"kun-yomi": "しろ"
+		},
+		"meaning": "white"
+	},
+	"6": {
+		"kanji": "雨",
+		"pronunciation": {
+			"on-yomi": "う",
+			"kun-yomi": "あめ"
+		},
+		"meaning": "rain"
+	},
+	"7": {
+		"kanji": "書",
+		"pronunciation": {
+			"on-yomi": "しょ",
+			"kun-yomi": "か"
+		},
+		"meaning": "to write"
+	},
+	"8": {
+		"kanji": "友",
+		"pronunciation": {
+			"on-yomi": "ゆう",
+			"kun-yomi": "とも"
+		},
+		"meaning": "friend"
+	},
+	"9": {
+		"kanji": "間",
+		"pronunciation": {
+			"on-yomi": "かん",
+			"kun-yomi": "あいだ"
+		},
+		"meaning": "between"
+	},
+	"10": {
+		"kanji": "家",
+		"pronunciation": {
+			"on-yomi": "か",
+			"kun-yomi": "いえ"
+		},
+		"meaning": "house"
+	},
+	"11": {
+		"kanji": "話",
+		"pronunciation": {
+			"on-yomi": "わ",
+			"kun-yomi": "はな、はなし"
+		},
+		"meaning": "to speak"
+	},
+	"12": {
+		"kanji": "少",
+		"pronunciation": {
+			"on-yomi": "しょう",
+			"kun-yomi": "すこ、すく"
+		},
+		"meaning": "little"
+	},
+	"13": {
+		"kanji": "古",
+		"pronunciation": {
+			"on-yomi": "こ",
+			"kun-yomi": "ふる"
+		},
+		"meaning": "old"
+	},
+	"14": {
+		"kanji": "知",
+		"pronunciation": {
+			"on-yomi": "ち",
+			"kun-yomi": "し"
+		},
+		"meaning": "to know"
+	},
+	"15": {
+		"kanji": "来",
+		"pronunciation": {
+			"on-yomi": "らい",
+			"kun-yomi": "く、き、こ"
+		},
+		"meaning": "to come"
+	}
+}

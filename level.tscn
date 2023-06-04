@@ -1,0 +1,361 @@
+[gd_scene load_steps=24 format=3 uid="uid://ofik3lt0dahj"]
+
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_lbm5t"]
+[ext_resource type="StyleBox" uid="uid://ev1uj0c5mnia" path="res://buttons/character_button.tres" id="2_k15cj"]
+[ext_resource type="Texture2D" uid="uid://c5mgfaapw64t4" path="res://assets/icon.svg" id="3_yot6p"]
+[ext_resource type="Script" path="res://scripts/chars/User1.gd" id="4_f2ntu"]
+[ext_resource type="Script" path="res://scripts/chars/User2.gd" id="5_ct6ha"]
+[ext_resource type="Script" path="res://scripts/chars/User3.gd" id="6_0weyl"]
+[ext_resource type="Script" path="res://scripts/chars/User4.gd" id="7_8jxys"]
+[ext_resource type="Script" path="res://scripts/chars/User5.gd" id="8_qpd7o"]
+[ext_resource type="Script" path="res://scripts/chars/Enemy1.gd" id="9_bkqw2"]
+[ext_resource type="Texture2D" uid="uid://clvlnaqg73us" path="res://assets/Enemy1.png" id="9_n56v7"]
+[ext_resource type="Script" path="res://scripts/chars/Enemy2.gd" id="10_472d0"]
+[ext_resource type="Script" path="res://scripts/chars/Enemy3.gd" id="11_e2jkj"]
+[ext_resource type="Texture2D" uid="uid://bfjdun1o4q2ph" path="res://assets/Enemy.png" id="11_vrivc"]
+[ext_resource type="Script" path="res://scripts/chars/Enemy4.gd" id="12_881h1"]
+[ext_resource type="Script" path="res://scripts/chars/Enemy5.gd" id="13_o3spp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_38yku"]
+bg_color = Color(0, 0.607843, 0.596078, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tg2ru"]
+bg_color = Color(0, 0.462745, 0.45098, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uqjo2"]
+bg_color = Color(0, 0.607843, 0.596078, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ud2d3"]
+bg_color = Color(0.996078, 0, 0, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kcrx8"]
+bg_color = Color(0.698039, 0, 0, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b545q"]
+bg_color = Color(0.996078, 0, 0, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nc11x"]
+bg_color = Color(0.67451, 0.482353, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4dng"]
+bg_color = Color(1, 0.85098, 0.262745, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_lbm5t")
+
+[node name="User1" type="Button" parent="."]
+offset_left = 525.0
+offset_top = 275.0
+offset_right = 675.0
+offset_bottom = 425.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("3_yot6p")
+script = ExtResource("4_f2ntu")
+
+[node name="HP" type="Label" parent="User1"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="User2" type="Button" parent="."]
+offset_left = 525.0
+offset_top = 580.0
+offset_right = 675.0
+offset_bottom = 730.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("3_yot6p")
+script = ExtResource("5_ct6ha")
+
+[node name="HP" type="Label" parent="User2"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="User3" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 100.0
+offset_right = 350.0
+offset_bottom = 250.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("3_yot6p")
+script = ExtResource("6_0weyl")
+
+[node name="HP" type="Label" parent="User3"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="User4" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 427.5
+offset_right = 350.0
+offset_bottom = 577.5
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("3_yot6p")
+script = ExtResource("7_8jxys")
+
+[node name="HP" type="Label" parent="User4"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="User5" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 755.0
+offset_right = 350.0
+offset_bottom = 905.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("3_yot6p")
+script = ExtResource("8_qpd7o")
+
+[node name="HP" type="Label" parent="User5"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy1" type="Button" parent="."]
+offset_left = 1170.0
+offset_top = 275.0
+offset_right = 1320.0
+offset_bottom = 425.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("9_n56v7")
+script = ExtResource("9_bkqw2")
+
+[node name="HP" type="Label" parent="Enemy1"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy2" type="Button" parent="."]
+offset_left = 1170.0
+offset_top = 580.0
+offset_right = 1320.0
+offset_bottom = 730.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("11_vrivc")
+script = ExtResource("10_472d0")
+
+[node name="HP" type="Label" parent="Enemy2"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy3" type="Button" parent="."]
+offset_left = 1495.0
+offset_top = 100.0
+offset_right = 1645.0
+offset_bottom = 250.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("11_vrivc")
+script = ExtResource("11_e2jkj")
+
+[node name="HP" type="Label" parent="Enemy3"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy4" type="Button" parent="."]
+offset_left = 1495.0
+offset_top = 427.5
+offset_right = 1645.0
+offset_bottom = 577.5
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("11_vrivc")
+script = ExtResource("12_881h1")
+
+[node name="HP" type="Label" parent="Enemy4"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy5" type="Button" parent="."]
+offset_left = 1495.0
+offset_top = 755.0
+offset_right = 1645.0
+offset_bottom = 905.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_k15cj")
+theme_override_styles/hover = ExtResource("2_k15cj")
+theme_override_styles/pressed = ExtResource("2_k15cj")
+theme_override_styles/disabled = ExtResource("2_k15cj")
+theme_override_styles/focus = ExtResource("2_k15cj")
+icon = ExtResource("11_vrivc")
+script = ExtResource("13_o3spp")
+
+[node name="HP" type="Label" parent="Enemy5"]
+layout_mode = 0
+offset_top = 150.0
+offset_right = 150.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Question" type="Button" parent="."]
+offset_left = 835.0
+offset_top = 900.0
+offset_right = 1085.0
+offset_bottom = 1000.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_38yku")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tg2ru")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uqjo2")
+text = "Question"
+
+[node name="Exit" type="Button" parent="."]
+custom_minimum_size = Vector2(200, 0)
+offset_top = 980.0
+offset_right = 200.0
+offset_bottom = 1080.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_ud2d3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kcrx8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b545q")
+text = "Exit"
+
+[node name="Skill" type="Label" parent="."]
+offset_left = 810.0
+offset_top = 425.0
+offset_right = 1110.0
+offset_bottom = 500.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nc11x")
+text = "skill"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Effect" type="Label" parent="."]
+offset_left = 835.0
+offset_top = 525.0
+offset_right = 1085.0
+offset_bottom = 625.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4dng")
+text = "score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Question" to="." method="_on_question_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

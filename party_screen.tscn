@@ -1,0 +1,327 @@
+[gd_scene load_steps=23 format=3 uid="uid://cuxjpgi0a3i0d"]
+
+[ext_resource type="Script" path="res://party_screen.gd" id="1_w717r"]
+[ext_resource type="StyleBox" uid="uid://ev1uj0c5mnia" path="res://buttons/character_button.tres" id="2_h8hjn"]
+[ext_resource type="StyleBox" uid="uid://c0g47feajtda1" path="res://buttons/outline_red.tres" id="3_p236x"]
+[ext_resource type="StyleBox" uid="uid://7lwmeoughadd" path="res://buttons/outline.tres" id="3_sk83q"]
+[ext_resource type="Texture2D" uid="uid://bajnnbk2lanb3" path="res://assets/Char3.png" id="4_fxc43"]
+[ext_resource type="StyleBox" uid="uid://c0cxm4lpsws4w" path="res://buttons/outline_blue.tres" id="5_ks7af"]
+[ext_resource type="StyleBox" uid="uid://baxk7fqae4suk" path="res://buttons/outline_green.tres" id="7_j12ps"]
+[ext_resource type="Texture2D" uid="uid://5t6ptutgoyu4" path="res://assets/Char6.png" id="7_nvojp"]
+[ext_resource type="Texture2D" uid="uid://btbcoywgj6pof" path="res://assets/Char9.png" id="8_jr1nh"]
+[ext_resource type="Texture2D" uid="uid://dklucwjjcwlfs" path="res://assets/Char1.png" id="9_eu5mt"]
+[ext_resource type="Texture2D" uid="uid://b71nca7xsv22e" path="res://assets/Char4.png" id="11_k5i4s"]
+[ext_resource type="Texture2D" uid="uid://c5mgfaapw64t4" path="res://assets/icon.svg" id="12_0r6kj"]
+[ext_resource type="Texture2D" uid="uid://j8mgfcvk8iy4" path="res://assets/Char7.png" id="12_tgn1u"]
+[ext_resource type="Texture2D" uid="uid://d4w2rciedt7w" path="res://assets/Char10.png" id="13_mtiwd"]
+[ext_resource type="Texture2D" uid="uid://nho3xyhdq0vi" path="res://assets/Char2.png" id="14_da1ud"]
+[ext_resource type="Texture2D" uid="uid://dju54ejyvg8m4" path="res://assets/Char11.png" id="16_435r6"]
+[ext_resource type="Texture2D" uid="uid://b1rhovn6hld5r" path="res://assets/Char5.png" id="16_qon8s"]
+[ext_resource type="Texture2D" uid="uid://dykr1g4twqj6g" path="res://assets/Char12.png" id="17_5l0ao"]
+[ext_resource type="Texture2D" uid="uid://c3ixkgst6sgiq" path="res://assets/Char8.png" id="17_pbhu5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_podha"]
+bg_color = Color(0.0627451, 0, 0.188235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bdrlb"]
+bg_color = Color(0, 0.137255, 0.196078, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q2uwf"]
+bg_color = Color(1, 0.607843, 0.588235, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+
+[node name="party_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w717r")
+
+[node name="CharLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 960.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 35
+text = "Select Characters to Add to Party"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharList" type="Label" parent="."]
+layout_mode = 0
+offset_top = 100.0
+offset_right = 960.0
+offset_bottom = 980.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_podha")
+
+[node name="char1" type="Button" parent="CharList"]
+offset_left = 100.0
+offset_top = 75.0
+offset_right = 250.0
+offset_bottom = 225.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_p236x")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("3_p236x")
+icon = ExtResource("9_eu5mt")
+
+[node name="char2" type="Button" parent="CharList"]
+offset_left = 405.0
+offset_top = 75.0
+offset_right = 555.0
+offset_bottom = 225.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("5_ks7af")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("5_ks7af")
+icon = ExtResource("14_da1ud")
+
+[node name="char3" type="Button" parent="CharList"]
+offset_left = 710.0
+offset_top = 75.0
+offset_right = 860.0
+offset_bottom = 225.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("7_j12ps")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("7_j12ps")
+icon = ExtResource("4_fxc43")
+
+[node name="char4" type="Button" parent="CharList"]
+offset_left = 100.0
+offset_top = 275.0
+offset_right = 250.0
+offset_bottom = 425.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_p236x")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("3_p236x")
+icon = ExtResource("11_k5i4s")
+
+[node name="char5" type="Button" parent="CharList"]
+offset_left = 405.0
+offset_top = 275.0
+offset_right = 555.0
+offset_bottom = 425.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("5_ks7af")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("5_ks7af")
+icon = ExtResource("16_qon8s")
+
+[node name="char6" type="Button" parent="CharList"]
+offset_left = 710.0
+offset_top = 275.0
+offset_right = 860.0
+offset_bottom = 425.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("7_j12ps")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("7_j12ps")
+icon = ExtResource("7_nvojp")
+
+[node name="char7" type="Button" parent="CharList"]
+offset_left = 100.0
+offset_top = 450.0
+offset_right = 250.0
+offset_bottom = 600.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_p236x")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("3_p236x")
+icon = ExtResource("12_tgn1u")
+
+[node name="char8" type="Button" parent="CharList"]
+offset_left = 405.0
+offset_top = 450.0
+offset_right = 555.0
+offset_bottom = 600.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("5_ks7af")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("5_ks7af")
+icon = ExtResource("17_pbhu5")
+
+[node name="char9" type="Button" parent="CharList"]
+offset_left = 710.0
+offset_top = 450.0
+offset_right = 860.0
+offset_bottom = 600.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("7_j12ps")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("7_j12ps")
+icon = ExtResource("8_jr1nh")
+
+[node name="char10" type="Button" parent="CharList"]
+offset_left = 100.0
+offset_top = 655.0
+offset_right = 250.0
+offset_bottom = 805.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_p236x")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("3_p236x")
+icon = ExtResource("13_mtiwd")
+
+[node name="char11" type="Button" parent="CharList"]
+offset_left = 405.0
+offset_top = 655.0
+offset_right = 555.0
+offset_bottom = 805.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("5_ks7af")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("5_ks7af")
+icon = ExtResource("16_435r6")
+
+[node name="char12" type="Button" parent="CharList"]
+offset_left = 710.0
+offset_top = 655.0
+offset_right = 860.0
+offset_bottom = 805.0
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("7_j12ps")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("7_j12ps")
+icon = ExtResource("17_5l0ao")
+
+[node name="CurPartyLabel" type="Label" parent="."]
+offset_left = 960.0
+offset_right = 1920.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 35
+text = "Current Party"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Characters" type="Label" parent="."]
+layout_direction = 1
+layout_mode = 0
+offset_left = 960.0
+offset_top = 100.0
+offset_right = 1920.0
+offset_bottom = 980.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bdrlb")
+
+[node name="party1" type="Button" parent="Characters"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 150.0
+offset_right = 350.0
+offset_bottom = 300.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_sk83q")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("2_h8hjn")
+icon = ExtResource("12_0r6kj")
+
+[node name="party2" type="Button" parent="Characters"]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 150.0
+offset_right = 760.0
+offset_bottom = 300.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_sk83q")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("2_h8hjn")
+icon = ExtResource("12_0r6kj")
+
+[node name="party3" type="Button" parent="Characters"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 500.0
+offset_right = 250.0
+offset_bottom = 650.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_sk83q")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("2_h8hjn")
+icon = ExtResource("12_0r6kj")
+
+[node name="party4" type="Button" parent="Characters"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 500.0
+offset_right = 550.0
+offset_bottom = 650.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_sk83q")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("2_h8hjn")
+icon = ExtResource("12_0r6kj")
+
+[node name="party5" type="Button" parent="Characters"]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 500.0
+offset_right = 850.0
+offset_bottom = 650.0
+scale = Vector2(1.5, 1.5)
+theme_override_styles/normal = ExtResource("2_h8hjn")
+theme_override_styles/hover = ExtResource("2_h8hjn")
+theme_override_styles/pressed = ExtResource("3_sk83q")
+theme_override_styles/disabled = ExtResource("2_h8hjn")
+theme_override_styles/focus = ExtResource("2_h8hjn")
+icon = ExtResource("12_0r6kj")
+
+[node name="Return" type="Button" parent="."]
+offset_left = 835.0
+offset_top = 980.0
+offset_right = 1085.0
+offset_bottom = 1080.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_q2uwf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q2uwf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q2uwf")
+theme_override_styles/focus = SubResource("StyleBoxFlat_q2uwf")
+text = "Return"
+
+[connection signal="pressed" from="CharList/char1" to="." method="_on_char_1_pressed"]
+[connection signal="pressed" from="CharList/char2" to="." method="_on_char_2_pressed"]
+[connection signal="pressed" from="CharList/char3" to="." method="_on_char_3_pressed"]
+[connection signal="pressed" from="CharList/char4" to="." method="_on_char_4_pressed"]
+[connection signal="pressed" from="CharList/char5" to="." method="_on_char_5_pressed"]
+[connection signal="pressed" from="CharList/char6" to="." method="_on_char_6_pressed"]
+[connection signal="pressed" from="CharList/char7" to="." method="_on_char_7_pressed"]
+[connection signal="pressed" from="CharList/char8" to="." method="_on_char_8_pressed"]
+[connection signal="pressed" from="CharList/char9" to="." method="_on_char_9_pressed"]
+[connection signal="pressed" from="CharList/char10" to="." method="_on_char_10_pressed"]
+[connection signal="pressed" from="CharList/char11" to="." method="_on_char_11_pressed"]
+[connection signal="pressed" from="CharList/char12" to="." method="_on_char_12_pressed"]
+[connection signal="pressed" from="Characters/party1" to="." method="_on_party_1_pressed"]
+[connection signal="pressed" from="Characters/party2" to="." method="_on_party_2_pressed"]
+[connection signal="pressed" from="Characters/party3" to="." method="_on_party_3_pressed"]
+[connection signal="pressed" from="Characters/party4" to="." method="_on_party_4_pressed"]
+[connection signal="pressed" from="Characters/party5" to="." method="_on_party_5_pressed"]
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]

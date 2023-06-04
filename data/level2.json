@@ -1,0 +1,114 @@
+{
+	"1": {
+		"kanji": "日",
+		"pronunciation": {
+			"on-yomi": "に、にち、にっ",
+			"kun-yomi": "び、ひ、か"
+		},
+		"meaning": "day; sun"
+	},
+	"2": {
+		"kanji": "本",
+		"pronunciation": {
+			"on-yomi": "ほん",
+			"kun-yomi": "もと"
+		},
+		"meaning": "book; basis"
+	},
+	"3": {
+		"kanji": "人",
+		"pronunciation": {
+			"on-yomi": "じん、にん",
+			"kun-yomi": "ひと"
+		},
+		"meaning": "person"
+	},
+	"4": {
+		"kanji": "月",
+		"pronunciation": {
+			"on-yomi": "げつ、がつ",
+			"kun-yomi": "つき"
+		},
+		"meaning": "moon; month"
+	},
+	"5": {
+		"kanji": "火",
+		"pronunciation": {
+			"on-yomi": "か",
+			"kun-yomi": "ひ、び"
+		},
+		"meaning": "fire"
+	},
+	"6": {
+		"kanji": "水",
+		"pronunciation": {
+			"on-yomi": "すい",
+			"kun-yomi": "みず"
+		},
+		"meaning": "water"
+	},
+	"7": {
+		"kanji": "木",
+		"pronunciation": {
+			"on-yomi": "もく",
+			"kun-yomi": "き"
+		},
+		"meaning": "tree"
+	},
+	"8": {
+		"kanji": "金",
+		"pronunciation": {
+			"on-yomi": "きん",
+			"kun-yomi": "かね"
+		},
+		"meaning": "gold; money"
+	},
+	"9": {
+		"kanji": "土",
+		"pronunciation": {
+			"on-yomi": "ど、と",
+			"kun-yomi": "つち"
+		},
+		"meaning": "soil"
+	},
+	"10": {
+		"kanji": "曜",
+		"pronunciation": {
+			"on-yomi": "よう",
+			"kun-yomi": ""
+		},
+		"meaning": "weekday"
+	},
+	"11": {
+		"kanji": "上",
+		"pronunciation": {
+			"on-yomi": "じょう",
+			"kun-yomi": "うえ、のぼ"
+		},
+		"meaning": "up"
+	},
+	"12": {
+		"kanji": "下",
+		"pronunciation": {
+			"on-yomi": "か",
+			"kun-yomi": "した、くだ"
+		},
+		"meaning": "down"
+	},
+	"13": {
+		"kanji": "中",
+		"pronunciation": {
+			"on-yomi": "ちゅう、じゅう",
+			"kun-yomi": "なか"
+		},
+		"meaning": "middle"
+	},
+	"14": {
+		"kanji": "半",
+		"pronunciation": {
+			"on-yomi": "はん",
+			"kun-yomi": ""
+		},
+		"meaning": "half"
+	}
+}

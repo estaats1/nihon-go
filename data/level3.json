@@ -1,0 +1,114 @@
+{
+	"1": {
+		"kanji": "山",
+		"pronunciation": {
+			"on-yomi": "さん",
+			"kun-yomi": "やま"
+		},
+		"meaning": "mountain"
+	},
+	"2": {
+		"kanji": "川",
+		"pronunciation": {
+			"on-yomi": "",
+			"kun-yomi": "かわ、がわ"
+		},
+		"meaning": "river"
+	},
+	"3": {
+		"kanji": "元",
+		"pronunciation": {
+			"on-yomi": "げん、がん",
+			"kun-yomi": "もと"
+		},
+		"meaning": "origin"
+	},
+	"4": {
+		"kanji": "気",
+		"pronunciation": {
+			"on-yomi": "き",
+			"kun-yomi": ""
+		},
+		"meaning": "spirit"
+	},
+	"5": {
+		"kanji": "天",
+		"pronunciation": {
+			"on-yomi": "てん",
+			"kun-yomi": ""
+		},
+		"meaning": "heaven"
+	},
+	"6": {
+		"kanji": "私",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "わたし"
+		},
+		"meaning": "I; private"
+	},
+	"7": {
+		"kanji": "今",
+		"pronunciation": {
+			"on-yomi": "こん",
+			"kun-yomi": "いま"
+		},
+		"meaning": "now"
+	},
+	"8": {
+		"kanji": "田",
+		"pronunciation": {
+			"on-yomi": "",
+			"kun-yomi": "た、だ"
+		},
+		"meaning": "rice field"
+	},
+	"9": {
+		"kanji": "女",
+		"pronunciation": {
+			"on-yomi": "じょ",
+			"kun-yomi": "おんな"
+		},
+		"meaning": "woman"
+	},
+	"10": {
+		"kanji": "男",
+		"pronunciation": {
+			"on-yomi": "だん",
+			"kun-yomi": "おとこ"
+		},
+		"meaning": "man"
+	},
+	"11": {
+		"kanji": "見",
+		"pronunciation": {
+			"on-yomi": "けん",
+			"kun-yomi": "み"
+		},
+		"meaning": "to see"
+	},
+	"12": {
+		"kanji": "行",
+		"pronunciation": {
+			"on-yomi": "こう、ぎょう",
+			"kun-yomi": "い"
+		},
+		"meaning": "to go"
+	},
+	"13": {
+		"kanji": "食",
+		"pronunciation": {
+			"on-yomi": "しょく",
+			"kun-yomi": "た"
+		},
+		"meaning": "to eat"
+	},
+	"14": {
+		"kanji": "飲",
+		"pronunciation": {
+			"on-yomi": "いん",
+			"kun-yomi": "の"
+		},
+		"meaning": "to drink"
+	}
+}

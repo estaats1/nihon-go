@@ -1,0 +1,114 @@
+{
+	"1": {
+		"kanji": "京",
+		"pronunciation": {
+			"on-yomi": "きょう",
+			"kun-yomi": ""
+		},
+		"meaning": "capital"
+	},
+	"2": {
+		"kanji": "子",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "こ"
+		},
+		"meaning": "child"
+	},
+	"3": {
+		"kanji": "小",
+		"pronunciation": {
+			"on-yomi": "しょう",
+			"kun-yomi": "ちい"
+		},
+		"meaning": "small"
+	},
+	"4": {
+		"kanji": "会",
+		"pronunciation": {
+			"on-yomi": "かい",
+			"kun-yomi": "あ"
+		},
+		"meaning": "to meet"
+	},
+	"5": {
+		"kanji": "社",
+		"pronunciation": {
+			"on-yomi": "しゃ、じゃ",
+			"kun-yomi": ""
+		},
+		"meaning": "oompany"
+	},
+	"6": {
+		"kanji": "父",
+		"pronunciation": {
+			"on-yomi": "ふ",
+			"kun-yomi": "ちち、とう"
+		},
+		"meaning": "father"
+	},
+	"7": {
+		"kanji": "母",
+		"pronunciation": {
+			"on-yomi": "ぼ",
+			"kun-yomi": "はは、かあ"
+		},
+		"meaning": "mother"
+	},
+	"8": {
+		"kanji": "高",
+		"pronunciation": {
+			"on-yomi": "こう",
+			"kun-yomi": "たか"
+		},
+		"meaning": "high"
+	},
+	"9": {
+		"kanji": "校",
+		"pronunciation": {
+			"on-yomi": "こう",
+			"kun-yomi": ""
+		},
+		"meaning": "school"
+	},
+	"10": {
+		"kanji": "毎",
+		"pronunciation": {
+			"on-yomi": "まい",
+			"kun-yomi": ""
+		},
+		"meaning": "every"
+	},
+	"11": {
+		"kanji": "語",
+		"pronunciation": {
+			"on-yomi": "ご",
+			"kun-yomi": ""
+		},
+		"meaning": "word"
+	},
+	"12": {
+		"kanji": "文",
+		"pronunciation": {
+			"on-yomi": "ぶん",
+			"kun-yomi": ""
+		},
+		"meaning": "sentence"
+	},
+	"13": {
+		"kanji": "帰",
+		"pronunciation": {
+			"on-yomi": "き",
+			"kun-yomi": "かえ"
+		},
+		"meaning": "to return"
+	},
+	"14": {
+		"kanji": "入",
+		"pronunciation": {
+			"on-yomi": "にゅう",
+			"kun-yomi": "はい、いり、い"
+		},
+		"meaning": "to enter"
+	}
+}

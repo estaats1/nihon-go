@@ -1,0 +1,1677 @@
+[gd_scene load_steps=32 format=3 uid="uid://bfcc0aj52ri2i"]
+
+[ext_resource type="Script" path="res://scripts/character_screen.gd" id="1_fr1x2"]
+[ext_resource type="Texture2D" uid="uid://bajnnbk2lanb3" path="res://assets/Char3.png" id="2_3jxk6"]
+[ext_resource type="StyleBox" uid="uid://ev1uj0c5mnia" path="res://buttons/character_button.tres" id="2_dsfsa"]
+[ext_resource type="Texture2D" uid="uid://dklucwjjcwlfs" path="res://assets/Char1.png" id="2_v7go7"]
+[ext_resource type="Texture2D" uid="uid://5t6ptutgoyu4" path="res://assets/Char6.png" id="3_6jdp1"]
+[ext_resource type="Texture2D" uid="uid://btbcoywgj6pof" path="res://assets/Char9.png" id="4_b8d8r"]
+[ext_resource type="Texture2D" uid="uid://dv25i2oc2d7ee" path="res://assets/coins.png" id="5_44yli"]
+[ext_resource type="Texture2D" uid="uid://b71nca7xsv22e" path="res://assets/Char4.png" id="5_vf62i"]
+[ext_resource type="Texture2D" uid="uid://nho3xyhdq0vi" path="res://assets/Char2.png" id="6_jk4sj"]
+[ext_resource type="Texture2D" uid="uid://daxd8xjambhkv" path="res://assets/item3.png" id="6_q1231"]
+[ext_resource type="Texture2D" uid="uid://cn5pbwwyojgh0" path="res://assets/tickets.png" id="6_rswwf"]
+[ext_resource type="Texture2D" uid="uid://j8mgfcvk8iy4" path="res://assets/Char7.png" id="7_a76xd"]
+[ext_resource type="Texture2D" uid="uid://b1rhovn6hld5r" path="res://assets/Char5.png" id="7_hhwmd"]
+[ext_resource type="Texture2D" uid="uid://d4w2rciedt7w" path="res://assets/Char10.png" id="8_wpfbv"]
+[ext_resource type="Texture2D" uid="uid://bbmk80ti6aig1" path="res://assets/item1.png" id="10_uah6o"]
+[ext_resource type="Texture2D" uid="uid://c3ixkgst6sgiq" path="res://assets/Char8.png" id="11_pa1rj"]
+[ext_resource type="Texture2D" uid="uid://dykr1g4twqj6g" path="res://assets/Char12.png" id="12_s26w3"]
+[ext_resource type="Texture2D" uid="uid://dqwgcldvxvkw0" path="res://assets/item2.png" id="15_y8vbv"]
+[ext_resource type="Texture2D" uid="uid://dju54ejyvg8m4" path="res://assets/Char11.png" id="20_bg3dn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxwq0"]
+bg_color = Color(0, 0.196078, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0.0980392, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y8vlc"]
+bg_color = Color(0.886275, 0.886275, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djcs2"]
+bg_color = Color(0.705882, 0.705882, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3om5"]
+bg_color = Color(0.196078, 0, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.0980392, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4dxf"]
+bg_color = Color(0, 0, 0.196078, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0.0980392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjy7t"]
+bg_color = Color(1, 0.905882, 0.568627, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfgfi"]
+bg_color = Color(1, 0.870588, 0.392157, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vo8kc"]
+bg_color = Color(1, 0.905882, 0.568627, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n8ws6"]
+bg_color = Color(1, 0.607843, 0.588235, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hyp6n"]
+bg_color = Color(0.552941, 1, 0.537255, 1)
+corner_radius_top_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5di4"]
+bg_color = Color(0.317647, 1, 0.329412, 1)
+corner_radius_top_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6l8h1"]
+bg_color = Color(0.552941, 1, 0.537255, 1)
+corner_radius_top_left = 50
+
+[node name="CharacterScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("1_fr1x2")
+
+[node name="ItemBar" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+anchors_preset = 0
+offset_right = 1928.0
+offset_bottom = 40.0
+
+[node name="coin" type="Sprite2D" parent="ItemBar"]
+position = Vector2(25, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_44yli")
+
+[node name="CoinsLabel" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 57.0
+offset_top = 1.0
+offset_right = 134.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Coins: "
+
+[node name="Coins" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 138.0
+offset_top = 1.0
+offset_right = 288.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="rose" type="Sprite2D" parent="ItemBar"]
+position = Vector2(425, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("10_uah6o")
+
+[node name="Item1Label" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 446.0
+offset_top = 1.0
+offset_right = 526.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Roses: "
+
+[node name="Item1" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 530.0
+offset_top = 1.0
+offset_right = 680.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="snowflake" type="Sprite2D" parent="ItemBar"]
+position = Vector2(815, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("15_y8vbv")
+
+[node name="Item2Label" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 838.0
+offset_top = 1.0
+offset_right = 918.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Snowflakes: "
+
+[node name="Item2" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 922.0
+offset_top = 1.0
+offset_right = 1072.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="heart" type="Sprite2D" parent="ItemBar"]
+position = Vector2(1205, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("6_q1231")
+
+[node name="Item3Label" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 1230.0
+offset_top = 1.0
+offset_right = 1310.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Hearts: "
+
+[node name="Item3" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 1314.0
+offset_top = 1.0
+offset_right = 1464.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="ticket" type="Sprite2D" parent="ItemBar"]
+position = Vector2(1600, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("6_rswwf")
+
+[node name="TicketLabel" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 1622.0
+offset_top = 1.0
+offset_right = 1717.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Tickets: "
+
+[node name="Tickets" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 1721.0
+offset_top = 1.0
+offset_right = 1871.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="Characters" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 930)
+layout_direction = 1
+layout_mode = 2
+anchors_preset = 0
+offset_top = 44.0
+offset_right = 1928.0
+offset_bottom = 974.0
+
+[node name="Support" type="Label" parent="Characters"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 625.0
+offset_bottom = 930.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_fxwq0")
+text = "Supports"
+horizontal_alignment = 1
+
+[node name="Char3" type="Button" parent="Characters/Support"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 125.0
+offset_right = 200.0
+offset_bottom = 275.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("2_3jxk6")
+
+[node name="level" type="Label" parent="Characters/Support/Char3"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Support/Char3"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Support/Char3"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Support/Char3"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Support/Char3"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Support/Char3"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Support/Char3"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char3/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Support/Char3"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_q1231")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char3/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp3" type="Button" parent="Characters/Support/Char3"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char6" type="Button" parent="Characters/Support"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 325.0
+offset_right = 200.0
+offset_bottom = 475.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("3_6jdp1")
+
+[node name="level" type="Label" parent="Characters/Support/Char6"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Support/Char6"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Support/Char6"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Support/Char6"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Support/Char6"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Support/Char6"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Support/Char6"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char6/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Support/Char6"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_q1231")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char6/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp6" type="Button" parent="Characters/Support/Char6"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char9" type="Button" parent="Characters/Support"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 525.0
+offset_right = 200.0
+offset_bottom = 675.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("4_b8d8r")
+
+[node name="level" type="Label" parent="Characters/Support/Char9"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Support/Char9"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Support/Char9"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Support/Char9"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Support/Char9"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Support/Char9"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Support/Char9"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char9/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Support/Char9"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_q1231")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char9/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp9" type="Button" parent="Characters/Support/Char9"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char12" type="Button" parent="Characters/Support"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 725.0
+offset_right = 200.0
+offset_bottom = 875.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("12_s26w3")
+
+[node name="level" type="Label" parent="Characters/Support/Char12"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Support/Char12"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Support/Char12"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Support/Char12"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Support/Char12"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Support/Char12"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Support/Char12"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char12/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Support/Char12"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_q1231")
+
+[node name="Amount" type="Label" parent="Characters/Support/Char12/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp12" type="Button" parent="Characters/Support/Char12"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="DPS" type="Label" parent="Characters"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 0
+offset_left = 660.0
+offset_right = 1260.0
+offset_bottom = 930.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_d3om5")
+text = "Damage Dealers"
+horizontal_alignment = 1
+
+[node name="Char1" type="Button" parent="Characters/DPS"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 125.0
+offset_right = 200.0
+offset_bottom = 275.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("2_v7go7")
+
+[node name="level" type="Label" parent="Characters/DPS/Char1"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/DPS/Char1"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/DPS/Char1"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/DPS/Char1"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/DPS/Char1"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/DPS/Char1"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/DPS/Char1"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char1/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/DPS/Char1"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_uah6o")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char1/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp1" type="Button" parent="Characters/DPS/Char1"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char4" type="Button" parent="Characters/DPS"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 325.0
+offset_right = 200.0
+offset_bottom = 475.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("5_vf62i")
+
+[node name="level" type="Label" parent="Characters/DPS/Char4"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/DPS/Char4"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/DPS/Char4"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/DPS/Char4"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/DPS/Char4"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/DPS/Char4"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/DPS/Char4"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char4/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/DPS/Char4"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_uah6o")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char4/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp4" type="Button" parent="Characters/DPS/Char4"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char7" type="Button" parent="Characters/DPS"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 525.0
+offset_right = 200.0
+offset_bottom = 675.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("7_a76xd")
+
+[node name="level" type="Label" parent="Characters/DPS/Char7"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/DPS/Char7"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/DPS/Char7"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/DPS/Char7"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/DPS/Char7"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/DPS/Char7"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/DPS/Char7"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char7/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/DPS/Char7"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_uah6o")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char7/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp7" type="Button" parent="Characters/DPS/Char7"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char10" type="Button" parent="Characters/DPS"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 725.0
+offset_right = 200.0
+offset_bottom = 875.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("8_wpfbv")
+
+[node name="level" type="Label" parent="Characters/DPS/Char10"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/DPS/Char10"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/DPS/Char10"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/DPS/Char10"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/DPS/Char10"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/DPS/Char10"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/DPS/Char10"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char10/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/DPS/Char10"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_uah6o")
+
+[node name="Amount" type="Label" parent="Characters/DPS/Char10/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp10" type="Button" parent="Characters/DPS/Char10"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Debuffer" type="Label" parent="Characters"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 0
+offset_left = 1295.0
+offset_right = 1895.0
+offset_bottom = 930.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_g4dxf")
+text = "Debuffers"
+horizontal_alignment = 1
+
+[node name="Char2" type="Button" parent="Characters/Debuffer"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 125.0
+offset_right = 200.0
+offset_bottom = 275.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("6_jk4sj")
+
+[node name="level" type="Label" parent="Characters/Debuffer/Char2"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Debuffer/Char2"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Debuffer/Char2"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Debuffer/Char2"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Debuffer/Char2"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Debuffer/Char2"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Debuffer/Char2"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char2/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Debuffer/Char2"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_y8vbv")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char2/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp2" type="Button" parent="Characters/Debuffer/Char2"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char5" type="Button" parent="Characters/Debuffer"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 325.0
+offset_right = 200.0
+offset_bottom = 475.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("7_hhwmd")
+
+[node name="level" type="Label" parent="Characters/Debuffer/Char5"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Debuffer/Char5"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Debuffer/Char5"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Debuffer/Char5"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Debuffer/Char5"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Debuffer/Char5"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Debuffer/Char5"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char5/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Debuffer/Char5"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_y8vbv")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char5/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp5" type="Button" parent="Characters/Debuffer/Char5"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char8" type="Button" parent="Characters/Debuffer"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 525.0
+offset_right = 200.0
+offset_bottom = 675.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("11_pa1rj")
+
+[node name="level" type="Label" parent="Characters/Debuffer/Char8"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Debuffer/Char8"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Debuffer/Char8"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Debuffer/Char8"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Debuffer/Char8"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Debuffer/Char8"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Debuffer/Char8"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char8/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Debuffer/Char8"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_y8vbv")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char8/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp8" type="Button" parent="Characters/Debuffer/Char8"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="Char11" type="Button" parent="Characters/Debuffer"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 725.0
+offset_right = 200.0
+offset_bottom = 875.0
+theme_override_styles/normal = ExtResource("2_dsfsa")
+theme_override_styles/hover = ExtResource("2_dsfsa")
+theme_override_styles/pressed = ExtResource("2_dsfsa")
+theme_override_styles/disabled = ExtResource("2_dsfsa")
+theme_override_styles/focus = ExtResource("2_dsfsa")
+icon = ExtResource("20_bg3dn")
+
+[node name="level" type="Label" parent="Characters/Debuffer/Char11"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = -30.0
+offset_right = 248.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 20
+text = "Level: 1"
+
+[node name="hp" type="Label" parent="Characters/Debuffer/Char11"]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 215.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "HP: "
+
+[node name="attack" type="Label" parent="Characters/Debuffer/Char11"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 30.0
+offset_right = 267.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Attack: "
+
+[node name="defense" type="Label" parent="Characters/Debuffer/Char11"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 60.0
+offset_right = 286.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 20
+text = "Defense: "
+
+[node name="crit_rate" type="Label" parent="Characters/Debuffer/Char11"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 90.0
+offset_right = 295.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Rate: "
+
+[node name="crit_dmg" type="Label" parent="Characters/Debuffer/Char11"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 340.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 20
+text = "Crit Damage: "
+
+[node name="coins" type="Sprite2D" parent="Characters/Debuffer/Char11"]
+position = Vector2(400, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_44yli")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char11/coins"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="items" type="Sprite2D" parent="Characters/Debuffer/Char11"]
+position = Vector2(400, 60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_y8vbv")
+
+[node name="Amount" type="Label" parent="Characters/Debuffer/Char11/items"]
+offset_left = 100.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 50
+text = "x100"
+vertical_alignment = 1
+
+[node name="LevelUp11" type="Button" parent="Characters/Debuffer/Char11"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 525.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_y8vlc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_djcs2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8vlc")
+text = "Level Up"
+
+[node name="ButtomButtons" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+anchors_preset = 0
+offset_top = 978.0
+offset_right = 1928.0
+offset_bottom = 1078.0
+
+[node name="BannerButton" type="Button" parent="ButtomButtons"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_right = 250.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_bjy7t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pfgfi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vo8kc")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vo8kc")
+text = "Banners"
+
+[node name="PartyButton" type="Button" parent="ButtomButtons"]
+layout_mode = 0
+offset_left = 835.0
+offset_right = 1085.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_n8ws6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n8ws6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n8ws6")
+theme_override_styles/focus = SubResource("StyleBoxFlat_n8ws6")
+text = "Edit Party"
+
+[node name="LevelButton" type="Button" parent="ButtomButtons"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 1670.0
+offset_right = 1920.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_hyp6n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p5di4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6l8h1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6l8h1")
+text = "Levels"
+
+[connection signal="pressed" from="Characters/Support/Char3/LevelUp3" to="." method="_on_level_up_3_pressed"]
+[connection signal="pressed" from="Characters/Support/Char6/LevelUp6" to="." method="_on_level_up_6_pressed"]
+[connection signal="pressed" from="Characters/Support/Char9/LevelUp9" to="." method="_on_level_up_9_pressed"]
+[connection signal="pressed" from="Characters/Support/Char12/LevelUp12" to="." method="_on_level_up_12_pressed"]
+[connection signal="pressed" from="Characters/DPS/Char1/LevelUp1" to="." method="_on_level_up_1_pressed"]
+[connection signal="pressed" from="Characters/DPS/Char4/LevelUp4" to="." method="_on_level_up_4_pressed"]
+[connection signal="pressed" from="Characters/DPS/Char7/LevelUp7" to="." method="_on_level_up_7_pressed"]
+[connection signal="pressed" from="Characters/DPS/Char10/LevelUp10" to="." method="_on_level_up_10_pressed"]
+[connection signal="pressed" from="Characters/Debuffer/Char2/LevelUp2" to="." method="_on_level_up_2_pressed"]
+[connection signal="pressed" from="Characters/Debuffer/Char5/LevelUp5" to="." method="_on_level_up_5_pressed"]
+[connection signal="pressed" from="Characters/Debuffer/Char8/LevelUp8" to="." method="_on_level_up_8_pressed"]
+[connection signal="pressed" from="Characters/Debuffer/Char11/LevelUp11" to="." method="_on_level_up_11_pressed"]
+[connection signal="pressed" from="ButtomButtons/BannerButton" to="." method="_on_banner_button_pressed"]
+[connection signal="pressed" from="ButtomButtons/PartyButton" to="." method="_on_party_button_pressed"]
+[connection signal="pressed" from="ButtomButtons/LevelButton" to="." method="_on_level_button_pressed"]

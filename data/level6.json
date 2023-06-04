@@ -1,0 +1,114 @@
+{
+	"1": {
+		"kanji": "員",
+		"pronunciation": {
+			"on-yomi": "いん",
+			"kun-yomi": ""
+		},
+		"meaning": "member"
+	},
+	"2": {
+		"kanji": "新",
+		"pronunciation": {
+			"on-yomi": "しん",
+			"kun-yomi": "あたら"
+		},
+		"meaning": "new"
+	},
+	"3": {
+		"kanji": "聞",
+		"pronunciation": {
+			"on-yomi": "ぶん",
+			"kun-yomi": "き"
+		},
+		"meaning": "to listen"
+	},
+	"4": {
+		"kanji": "作",
+		"pronunciation": {
+			"on-yomi": "さく",
+			"kun-yomi": "つく"
+		},
+		"meaning": "to make"
+	},
+	"5": {
+		"kanji": "仕",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "つか"
+		},
+		"meaning": "to serve"
+	},
+	"6": {
+		"kanji": "事",
+		"pronunciation": {
+			"on-yomi": "じ",
+			"kun-yomi": "ごと、こと"
+		},
+		"meaning": "thing"
+	},
+	"7": {
+		"kanji": "電",
+		"pronunciation": {
+			"on-yomi": "でん",
+			"kun-yomi": ""
+		},
+		"meaning": "electricity"
+	},
+	"8": {
+		"kanji": "車",
+		"pronunciation": {
+			"on-yomi": "しゃ",
+			"kun-yomi": "くるま"
+		},
+		"meaning": "car"
+	},
+	"9": {
+		"kanji": "休",
+		"pronunciation": {
+			"on-yomi": "きゅう",
+			"kun-yomi": "やす"
+		},
+		"meaning": "to rest"
+	},
+	"10": {
+		"kanji": "言",
+		"pronunciation": {
+			"on-yomi": "げん",
+			"kun-yomi": "い、こと"
+		},
+		"meaning": "to say"
+	},
+	"11": {
+		"kanji": "読",
+		"pronunciation": {
+			"on-yomi": "どく",
+			"kun-yomi": "よ"
+		},
+		"meaning": "to read"
+	},
+	"12": {
+		"kanji": "思",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "おも"
+		},
+		"meaning": "to think"
+	},
+	"13": {
+		"kanji": "次",
+		"pronunciation": {
+			"on-yomi": "じ",
+			"kun-yomi": "つぎ"
+		},
+		"meaning": "next"
+	},
+	"14": {
+		"kanji": "何",
+		"pronunciation": {
+			"on-yomi": "",
+			"kun-yomi": "なに、なん"
+		},
+		"meaning": "what"
+	}
+}

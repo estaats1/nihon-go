@@ -1,0 +1,130 @@
+{
+	"1": {
+		"kanji": "彼",
+		"pronunciation": {
+			"on-yomi": "",
+			"kun-yomi": "かれ、かの"
+		},
+		"meaning": "he"
+	},
+	"2": {
+		"kanji": "代",
+		"pronunciation": {
+			"on-yomi": "だい",
+			"kun-yomi": "か"
+		},
+		"meaning": "age; replace"
+	},
+	"3": {
+		"kanji": "留",
+		"pronunciation": {
+			"on-yomi": "りゅう、る",
+			"kun-yomi": ""
+		},
+		"meaning": "to stay; to keep"
+	},
+	"4": {
+		"kanji": "族",
+		"pronunciation": {
+			"on-yomi": "ぞく",
+			"kun-yomi": ""
+		},
+		"meaning": "family; tribe"
+	},
+	"5": {
+		"kanji": "親",
+		"pronunciation": {
+			"on-yomi": "しん",
+			"kun-yomi": "おや、した"
+		},
+		"meaning": "parent; intimacy"
+	},
+	"6": {
+		"kanji": "切",
+		"pronunciation": {
+			"on-yomi": "せつ",
+			"kun-yomi": "き、きっ"
+		},
+		"meaning": "to cut"
+	},
+	"7": {
+		"kanji": "英",
+		"pronunciation": {
+			"on-yomi": "えい",
+			"kun-yomi": ""
+		},
+		"meaning": "English; excellent"
+	},
+	"8": {
+		"kanji": "店",
+		"pronunciation": {
+			"on-yomi": "てん",
+			"kun-yomi": "みせ"
+		},
+		"meaning": "shop"
+	},
+	"9": {
+		"kanji": "去",
+		"pronunciation": {
+			"on-yomi": "きょ、こ",
+			"kun-yomi": "さ"
+		},
+		"meaning": "past; to leave"
+	},
+	"10": {
+		"kanji": "急",
+		"pronunciation": {
+			"on-yomi": "きゅう",
+			"kun-yomi": "いそ"
+		},
+		"meaning": "to hurry; emergency"
+	},
+	"11": {
+		"kanji": "乗",
+		"pronunciation": {
+			"on-yomi": "じょう",
+			"kun-yomi": "の"
+		},
+		"meaning": "to ride"
+	},
+	"12": {
+		"kanji": "当",
+		"pronunciation": {
+			"on-yomi": "とう",
+			"kun-yomi": "あ"
+		},
+		"meaning": "to hit"
+	},
+	"13": {
+		"kanji": "音",
+		"pronunciation": {
+			"on-yomi": "おん",
+			"kun-yomi": "おと、ね"
+		},
+		"meaning": "sound"
+	},
+	"14": {
+		"kanji": "楽",
+		"pronunciation": {
+			"on-yomi": "がく、がっ、らく",
+			"kun-yomi": "たの"
+		},
+		"meaning": "pleasure"
+	},
+	"15": {
+		"kanji": "医",
+		"pronunciation": {
+			"on-yomi": "い",
+			"kun-yomi": ""
+		},
+		"meaning": "doctor; medicine"
+	},
+	"16": {
+		"kanji": "者",
+		"pronunciation": {
+			"on-yomi": "しゃ、じゃ",
+			"kun-yomi": "もの"
+		},
+		"meaning": "person"
+	}
+}

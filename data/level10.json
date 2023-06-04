@@ -1,0 +1,114 @@
+{
+	"1": {
+		"kanji": "昔",
+		"pronunciation": {
+			"on-yomi": "",
+			"kun-yomi": "むかし"
+		},
+		"meaning": "ancient times"
+	},
+	"2": {
+		"kanji": "々",
+		"pronunciation": {
+			"on-yomi": "",
+			"kun-yomi": ""
+		},
+		"meaning": "symbol of repetition of kanji"
+	},
+	"3": {
+		"kanji": "神",
+		"pronunciation": {
+			"on-yomi": "じん、しん、こう",
+			"kun-yomi": "かみ"
+		},
+		"meaning": "god"
+	},
+	"4": {
+		"kanji": "早",
+		"pronunciation": {
+			"on-yomi": "そう",
+			"kun-yomi": "はや"
+		},
+		"meaning": "early"
+	},
+	"5": {
+		"kanji": "起",
+		"pronunciation": {
+			"on-yomi": "お",
+			"kun-yomi": "き"
+		},
+		"meaning": "to get up"
+	},
+	"6": {
+		"kanji": "牛",
+		"pronunciation": {
+			"on-yomi": "ぎゅう",
+			"kun-yomi": "うし"
+		},
+		"meaning": "cow"
+	},
+	"7": {
+		"kanji": "使",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "つか"
+		},
+		"meaning": "to use"
+	},
+	"8": {
+		"kanji": "働",
+		"pronunciation": {
+			"on-yomi": "どう",
+			"kun-yomi": "はたら、ばたら"
+		},
+		"meaning": "to work"
+	},
+	"9": {
+		"kanji": "連",
+		"pronunciation": {
+			"on-yomi": "れん",
+			"kun-yomi": "つ"
+		},
+		"meaning": "to link"
+	},
+	"10": {
+		"kanji": "別",
+		"pronunciation": {
+			"on-yomi": "べつ",
+			"kun-yomi": "わか"
+		},
+		"meaning": "to separate"
+	},
+	"11": {
+		"kanji": "度",
+		"pronunciation": {
+			"on-yomi": "ど",
+			"kun-yomi": ""
+		},
+		"meaning": "time; degrees"
+	},
+	"12": {
+		"kanji": "赤",
+		"pronunciation": {
+			"on-yomi": "せき",
+			"kun-yomi": "あか"
+		},
+		"meaning": "red"
+	},
+	"13": {
+		"kanji": "青",
+		"pronunciation": {
+			"on-yomi": "せい",
+			"kun-yomi": "あお"
+		},
+		"meaning": "blue"
+	},
+	"14": {
+		"kanji": "色",
+		"pronunciation": {
+			"on-yomi": "しき、しょく",
+			"kun-yomi": "いろ"
+		},
+		"meaning": "color"
+	}
+}

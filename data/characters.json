@@ -1,0 +1,194 @@
+{
+	"Char1": {
+		"name": "Char1",
+		"class": "DPS",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "front",
+			"skill": "bonus_f",
+			"effect": 50
+		},
+		"acquired": 1,
+		"level": 1
+	},
+	"Char2": {
+		"name": "Char2",
+		"class": "Debuffer",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "back",
+			"skill": "lower_atk",
+			"effect": 0.9
+		},
+		"acquired": 1,
+		"level": 1
+	},
+	"Char3": {
+		"name": "Char3",
+		"class": "Support",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "lowest_t",
+			"skill": "heal",
+			"effect": 20
+		},
+		"acquired": 1,
+		"level": 1
+	},
+	"Char4": {
+		"name": "Char4",
+		"class": "DPS",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "front",
+			"skill": "bonus_p",
+			"effect": 0.5
+		},
+		"acquired": 1,
+		"level": 1
+	},
+	"Char5": {
+		"name": "Char5",
+		"class": "Debuffer",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "high_def",
+			"skill": "lower_def",
+			"effect": 0.9
+		},
+		"acquired": 1,
+		"level": 1
+	},
+	"Char6": {
+		"name": "Char6",
+		"class": "Support",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "all_t",
+			"skill": "boost_atk",
+			"effect": 1.1
+		},
+		"acquired": 1,
+		"level": 1
+	},
+	"Char7": {
+		"name": "Char7",
+		"class": "DPS",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "all_e",
+			"skill": "bonus_f",
+			"effect": 20
+		},
+		"acquired": 0,
+		"level": 1
+	},
+	"Char8": {
+		"name": "Char8",
+		"class": "Debuffer",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "high_atk",
+			"skill": "lower_atk",
+			"effect": 0.8
+		},
+		"acquired": 0,
+		"level": 1
+	},
+	"Char9": {
+		"name": "Char9",
+		"class": "Support",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "lowest_t",
+			"skill": "boost_def",
+			"effect": 1.2
+		},
+		"acquired": 0,
+		"level": 1
+	},
+	"Char10": {
+		"name": "Char10",
+		"class": "DPS",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "high_hp",
+			"skill": "bonus_p",
+			"effect": 1.5
+		},
+		"acquired": 0,
+		"level": 1
+	},
+	"Char11": {
+		"name": "Char11",
+		"class": "Debuffer",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "lowest_e",
+			"skill": "lower_def",
+			"effect": 0.8
+		},
+		"acquired": 0,
+		"level": 1
+	},
+	"Char12": {
+		"name": "Char12",
+		"class": "Support",
+		"HP": 100,
+		"attack": 10,
+		"defense": 10,
+		"crit_rate": 0.05,
+		"crit_dmg": 2,
+		"special": {
+			"target": "all_t",
+			"skill": "heal",
+			"effect": 5
+		},
+		"acquired": 0,
+		"level": 1
+	}
+}

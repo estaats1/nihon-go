@@ -1,0 +1,130 @@
+{
+	"1": {
+		"kanji": "手",
+		"pronunciation": {
+			"on-yomi": "しゅ",
+			"kun-yomi": "て"
+		},
+		"meaning": "hand"
+	},
+	"2": {
+		"kanji": "紙",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "がみ、かみ"
+		},
+		"meaning": "paper"
+	},
+	"3": {
+		"kanji": "好",
+		"pronunciation": {
+			"on-yomi": "こう",
+			"kun-yomi": "す、この"
+		},
+		"meaning": "favorite; to like"
+	},
+	"4": {
+		"kanji": "近",
+		"pronunciation": {
+			"on-yomi": "きん",
+			"kun-yomi": "ちか"
+		},
+		"meaning": "near"
+	},
+	"5": {
+		"kanji": "明",
+		"pronunciation": {
+			"on-yomi": "めい",
+			"kun-yomi": "あか"
+		},
+		"meaning": "bright"
+	},
+	"6": {
+		"kanji": "病",
+		"pronunciation": {
+			"on-yomi": "びょう",
+			"kun-yomi": ""
+		},
+		"meaning": "ill; sick"
+	},
+	"7": {
+		"kanji": "院",
+		"pronunciation": {
+			"on-yomi": "いん",
+			"kun-yomi": ""
+		},
+		"meaning": "institution"
+	},
+	"8": {
+		"kanji": "映",
+		"pronunciation": {
+			"on-yomi": "えい",
+			"kun-yomi": "うつ"
+		},
+		"meaning": "to reflect"
+	},
+	"9": {
+		"kanji": "画",
+		"pronunciation": {
+			"on-yomi": "が、かく",
+			"kun-yomi": ""
+		},
+		"meaning": "picture"
+	},
+	"10": {
+		"kanji": "歌",
+		"pronunciation": {
+			"on-yomi": "か",
+			"kun-yomi": "うた"
+		},
+		"meaning": "to sing"
+	},
+	"11": {
+		"kanji": "市",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "いち"
+		},
+		"meaning": "city"
+	},
+	"12": {
+		"kanji": "所",
+		"pronunciation": {
+			"on-yomi": "じょ、しょ",
+			"kun-yomi": "ところ、どころ"
+		},
+		"meaning": "place"
+	},
+	"13": {
+		"kanji": "勉",
+		"pronunciation": {
+			"on-yomi": "べん",
+			"kun-yomi": "つと"
+		},
+		"meaning": "to make efforts"
+	},
+	"14": {
+		"kanji": "強",
+		"pronunciation": {
+			"on-yomi": "きょう、ごう",
+			"kun-yomi": "つよ"
+		},
+		"meaning": "strong"
+	},
+	"15": {
+		"kanji": "有",
+		"pronunciation": {
+			"on-yomi": "ゆう",
+			"kun-yomi": "あ"
+		},
+		"meaning": "to exist"
+	},
+	"16": {
+		"kanji": "旅",
+		"pronunciation": {
+			"on-yomi": "りょ",
+			"kun-yomi": "たび"
+		},
+		"meaning": "travel"
+	}
+}

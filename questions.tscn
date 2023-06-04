@@ -1,0 +1,135 @@
+[gd_scene load_steps=9 format=3 uid="uid://b3bdqbpbqn48q"]
+
+[ext_resource type="Script" path="res://scripts/questions.gd" id="1_xxinh"]
+[ext_resource type="StyleBox" uid="uid://c2cry6hrpo83n" path="res://buttons/answer_button.tres" id="2_7wj5r"]
+[ext_resource type="StyleBox" uid="uid://dx8dh37ciibxn" path="res://buttons/answer_button_hover.tres" id="3_sf7by"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r7qtx"]
+bg_color = Color(0.109804, 0, 0.188235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j1udw"]
+bg_color = Color(0.168627, 0, 0.27451, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ksnxn"]
+bg_color = Color(0, 0.607843, 0.596078, 1)
+corner_radius_top_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pqgdw"]
+bg_color = Color(0, 0.462745, 0.45098, 1)
+corner_radius_top_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7u6ql"]
+bg_color = Color(0, 0.607843, 0.596078, 1)
+corner_radius_top_left = 50
+
+[node name="questions1" type="Node2D"]
+script = ExtResource("1_xxinh")
+
+[node name="QuestionBg" type="Label" parent="."]
+offset_left = 500.0
+offset_right = 1420.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r7qtx")
+
+[node name="QuestionText" type="Label" parent="."]
+offset_left = 600.0
+offset_top = 50.0
+offset_right = 1320.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 125
+theme_override_styles/normal = SubResource("StyleBoxFlat_j1udw")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Answer1" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 425.0
+offset_right = 1320.0
+offset_bottom = 525.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("2_7wj5r")
+theme_override_styles/hover = ExtResource("3_sf7by")
+theme_override_styles/pressed = ExtResource("2_7wj5r")
+
+[node name="Answer2" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 550.0
+offset_right = 1320.0
+offset_bottom = 650.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("2_7wj5r")
+theme_override_styles/hover = ExtResource("3_sf7by")
+theme_override_styles/pressed = ExtResource("2_7wj5r")
+
+[node name="Answer3" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 675.0
+offset_right = 1320.0
+offset_bottom = 775.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("2_7wj5r")
+theme_override_styles/hover = ExtResource("3_sf7by")
+theme_override_styles/pressed = ExtResource("2_7wj5r")
+
+[node name="Answer4" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 800.0
+offset_right = 1320.0
+offset_bottom = 900.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("2_7wj5r")
+theme_override_styles/hover = ExtResource("3_sf7by")
+theme_override_styles/pressed = ExtResource("2_7wj5r")
+
+[node name="Answer5" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 925.0
+offset_right = 1320.0
+offset_bottom = 1025.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("2_7wj5r")
+theme_override_styles/hover = ExtResource("3_sf7by")
+theme_override_styles/pressed = ExtResource("2_7wj5r")
+
+[node name="Continue" type="Button" parent="."]
+offset_left = 1670.0
+offset_top = 980.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_ksnxn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pqgdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7u6ql")
+theme_override_styles/focus = SubResource("StyleBoxFlat_7u6ql")
+text = "Continue"
+
+[connection signal="pressed" from="Answer1" to="." method="_on_answer_1_pressed"]
+[connection signal="pressed" from="Answer2" to="." method="_on_answer_2_pressed"]
+[connection signal="pressed" from="Answer3" to="." method="_on_answer_3_pressed"]
+[connection signal="pressed" from="Answer4" to="." method="_on_answer_4_pressed"]
+[connection signal="pressed" from="Answer5" to="." method="_on_answer_5_pressed"]
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]

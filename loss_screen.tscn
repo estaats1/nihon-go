@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckcb4fcl0334k"]
+
+[ext_resource type="Script" path="res://scripts/loss_screne.gd" id="1_nwto3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2k5qe"]
+bg_color = Color(0.521569, 0, 0.376471, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sapjt"]
+bg_color = Color(0.364706, 0, 0.258824, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thw3e"]
+bg_color = Color(0.521569, 0, 0.376471, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4d17v"]
+bg_color = Color(0.352941, 0, 0.196078, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.254902, 0, 0.239216, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nwto3")
+
+[node name="Return" type="Button" parent="."]
+layout_mode = 0
+offset_left = 735.0
+offset_top = 800.0
+offset_right = 1185.0
+offset_bottom = 950.0
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_2k5qe")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sapjt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_thw3e")
+theme_override_styles/focus = SubResource("StyleBoxFlat_thw3e")
+text = "Return to Level Screen"
+
+[node name="LossMessage" type="Label" parent="."]
+layout_mode = 0
+offset_left = 735.0
+offset_top = 360.0
+offset_right = 1185.0
+offset_bottom = 560.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_4d17v")
+text = "You lost :("
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]

@@ -1,0 +1,122 @@
+{
+	"1": {
+		"kanji": "東",
+		"pronunciation": {
+			"on-yomi": "とう",
+			"kun-yomi": "ひがし"
+		},
+		"meaning": "east"
+	},
+	"2": {
+		"kanji": "西",
+		"pronunciation": {
+			"on-yomi": "せい、さい",
+			"kun-yomi": "にし"
+		},
+		"meaning": "west"
+	},
+	"3": {
+		"kanji": "南",
+		"pronunciation": {
+			"on-yomi": "なん",
+			"kun-yomi": "みなみ"
+		},
+		"meaning": "south"
+	},
+	"4": {
+		"kanji": "北",
+		"pronunciation": {
+			"on-yomi": "ほく、ほっ",
+			"kun-yomi": "きた"
+		},
+		"meaning": "north"
+	},
+	"5": {
+		"kanji": "口",
+		"pronunciation": {
+			"on-yomi": "こう",
+			"kun-yomi": "ぐち、くち"
+		},
+		"meaning": "mouth"
+	},
+	"6": {
+		"kanji": "出",
+		"pronunciation": {
+			"on-yomi": "しゅっ、しゅつ",
+			"kun-yomi": "で、だ"
+		},
+		"meaning": "to exit"
+	},
+	"7": {
+		"kanji": "右",
+		"pronunciation": {
+			"on-yomi": "う、ゆう",
+			"kun-yomi": "みぎ"
+		},
+		"meaning": "right"
+	},
+	"8": {
+		"kanji": "左",
+		"pronunciation": {
+			"on-yomi": "さ",
+			"kun-yomi": "ひだり"
+		},
+		"meaning": "left"
+	},
+	"9": {
+		"kanji": "分",
+		"pronunciation": {
+			"on-yomi": "ふん、ぷん、ぶん",
+			"kun-yomi": "わ"
+		},
+		"meaning": "minute; to divide"
+	},
+	"10": {
+		"kanji": "先",
+		"pronunciation": {
+			"on-yomi": "せん",
+			"kun-yomi": "さき"
+		},
+		"meaning": "ahead"
+	},
+	"11": {
+		"kanji": "生",
+		"pronunciation": {
+			"on-yomi": "せい、しょう",
+			"kun-yomi": "う"
+		},
+		"meaning": "birth"
+	},
+	"12": {
+		"kanji": "大",
+		"pronunciation": {
+			"on-yomi": "だい、たい",
+			"kun-yomi": "おお"
+		},
+		"meaning": "big"
+	},
+	"13": {
+		"kanji": "学",
+		"pronunciation": {
+			"on-yomi": "がく、がっ",
+			"kun-yomi": "まな"
+		},
+		"meaning": "learning"
+	},
+	"14": {
+		"kanji": "外",
+		"pronunciation": {
+			"on-yomi": "がい",
+			"kun-yomi": "そと"
+		},
+		"meaning": "outside"
+	},
+	"15": {
+		"kanji": "国",
+		"pronunciation": {
+			"on-yomi": "こく、ごく",
+			"kun-yomi": "くに"
+		},
+		"meaning": "country"
+	}
+}

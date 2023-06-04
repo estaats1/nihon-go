@@ -1,0 +1,130 @@
+{
+	"1": {
+		"kanji": "物",
+		"pronunciation": {
+			"on-yomi": "ぶつ、ぶっ",
+			"kun-yomi": "もの"
+		},
+		"meaning": "thing"
+	},
+	"2": {
+		"kanji": "鳥",
+		"pronunciation": {
+			"on-yomi": "ちょう",
+			"kun-yomi": "とり"
+		},
+		"meaning": "bird"
+	},
+	"3": {
+		"kanji": "料",
+		"pronunciation": {
+			"on-yomi": "りょう",
+			"kun-yomi": ""
+		},
+		"meaning": "ingredients; fare"
+	},
+	"4": {
+		"kanji": "理",
+		"pronunciation": {
+			"on-yomi": "り",
+			"kun-yomi": ""
+		},
+		"meaning": "reason"
+	},
+	"5": {
+		"kanji": "特",
+		"pronunciation": {
+			"on-yomi": "とく、とっ",
+			"kun-yomi": ""
+		},
+		"meaning": "special"
+	},
+	"6": {
+		"kanji": "安",
+		"pronunciation": {
+			"on-yomi": "あん",
+			"kun-yomi": "やす"
+		},
+		"meaning": "cheap; ease"
+	},
+	"7": {
+		"kanji": "飯",
+		"pronunciation": {
+			"on-yomi": "はん",
+			"kun-yomi": ""
+		},
+		"meaning": "food; cooked rice"
+	},
+	"8": {
+		"kanji": "肉",
+		"pronunciation": {
+			"on-yomi": "にく",
+			"kun-yomi": ""
+		},
+		"meaning": "meat"
+	},
+	"9": {
+		"kanji": "悪",
+		"pronunciation": {
+			"on-yomi": "あく",
+			"kun-yomi": "わる"
+		},
+		"meaning": "bad; wrong"
+	},
+	"10": {
+		"kanji": "体",
+		"pronunciation": {
+			"on-yomi": "たい",
+			"kun-yomi": "からだ"
+		},
+		"meaning": "body"
+	},
+	"11": {
+		"kanji": "同",
+		"pronunciation": {
+			"on-yomi": "どう",
+			"kun-yomi": "おな"
+		},
+		"meaning": "same"
+	},
+	"12": {
+		"kanji": "着",
+		"pronunciation": {
+			"on-yomi": "ちゃく",
+			"kun-yomi": "つ、き、ぎ"
+		},
+		"meaning": "to reach; to wear"
+	},
+	"13": {
+		"kanji": "空",
+		"pronunciation": {
+			"on-yomi": "くう",
+			"kun-yomi": "そら、あ、から"
+		},
+		"meaning": "sky; empty"
+	},
+	"14": {
+		"kanji": "港",
+		"pronunciation": {
+			"on-yomi": "くう",
+			"kun-yomi": "みなと"
+		},
+		"meaning": "port; harbor"
+	},
+	"15": {
+		"kanji": "昼",
+		"pronunciation": {
+			"on-yomi": "ちゅう",
+			"kun-yomi": "ひる"
+		},
+		"meaning": "noon; daytime"
+	},
+	"16": {
+		"kanji": "海",
+		"pronunciation": {
+			"on-yomi": "かい",
+			"kun-yomi": "うみ"
+		},
+		"meaning": "sea"
+	}
+}

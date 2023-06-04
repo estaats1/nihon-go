@@ -1,0 +1,114 @@
+{
+	"1": {
+		"kanji": "住",
+		"pronunciation": {
+			"on-yomi": "じゅう",
+			"kun-yomi": "す"
+		},
+		"meaning": "to live"
+	},
+	"2": {
+		"kanji": "正",
+		"pronunciation": {
+			"on-yomi": "しょう",
+			"kun-yomi": "ただ"
+		},
+		"meaning": "right"
+	},
+	"3": {
+		"kanji": "年",
+		"pronunciation": {
+			"on-yomi": "ねん",
+			"kun-yomi": "とし"
+		},
+		"meaning": "year"
+	},
+	"4": {
+		"kanji": "売",
+		"pronunciation": {
+			"on-yomi": "ばい",
+			"kun-yomi": "う"
+		},
+		"meaning": "to sell"
+	},
+	"5": {
+		"kanji": "買",
+		"pronunciation": {
+			"on-yomi": "ばい",
+			"kun-yomi": "か"
+		},
+		"meaning": "to buy"
+	},
+	"6": {
+		"kanji": "町",
+		"pronunciation": {
+			"on-yomi": "ちょう",
+			"kun-yomi": "まち"
+		},
+		"meaning": "town"
+	},
+	"7": {
+		"kanji": "長",
+		"pronunciation": {
+			"on-yomi": "ちょう",
+			"kun-yomi": "なが"
+		},
+		"meaning": "long"
+	},
+	"8": {
+		"kanji": "道",
+		"pronunciation": {
+			"on-yomi": "どう",
+			"kun-yomi": "みち"
+		},
+		"meaning": "way"
+	},
+	"9": {
+		"kanji": "雪",
+		"pronunciation": {
+			"on-yomi": "せつ",
+			"kun-yomi": "ゆき"
+		},
+		"meaning": "snow"
+	},
+	"10": {
+		"kanji": "立",
+		"pronunciation": {
+			"on-yomi": "りつ",
+			"kun-yomi": "た"
+		},
+		"meaning": "to stand"
+	},
+	"11": {
+		"kanji": "自",
+		"pronunciation": {
+			"on-yomi": "じ",
+			"kun-yomi": ""
+		},
+		"meaning": "self"
+	},
+	"12": {
+		"kanji": "夜",
+		"pronunciation": {
+			"on-yomi": "や",
+			"kun-yomi": "よる、よ"
+		},
+		"meaning": "night"
+	},
+	"13": {
+		"kanji": "朝",
+		"pronunciation": {
+			"on-yomi": "ちょう",
+			"kun-yomi": "あさ"
+		},
+		"meaning": "morning"
+	},
+	"14": {
+		"kanji": "持",
+		"pronunciation": {
+			"on-yomi": "じ",
+			"kun-yomi": "も"
+		},
+		"meaning": "to hold"
+	}
+}

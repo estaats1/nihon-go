@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://cktro11oqpcdd"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_hivnu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uy3ya"]
+bg_color = Color(0.623529, 0.333333, 1, 1)
+border_width_left = 50
+border_width_top = 50
+border_width_right = 50
+border_width_bottom = 50
+border_color = Color(0.345098, 0.00392157, 0.623529, 1)
+border_blend = true
+corner_radius_top_left = 125
+corner_radius_top_right = 125
+corner_radius_bottom_right = 125
+corner_radius_bottom_left = 125
+
+[node name="VBoxContainer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("1_hivnu")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 450.0
+offset_top = 502.5
+offset_right = 831.0
+offset_bottom = 577.5
+theme_override_font_sizes/font_size = 40
+text = "Get ready to NiHon-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+offset_left = 835.0
+offset_top = 415.0
+offset_right = 1091.0
+offset_bottom = 665.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_uy3ya")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uy3ya")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uy3ya")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uy3ya")
+text = "GO!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

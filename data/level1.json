@@ -1,0 +1,122 @@
+{
+	"1": {
+		"kanji": "一",
+		"pronunciation": {
+			"on-yomi": "いち、いっ",
+			"kun-yomi": "ひと"
+		},
+		"meaning": "one"
+	},
+	"2": {
+		"kanji": "二",
+		"pronunciation": {
+			"on-yomi": "に",
+			"kun-yomi": "ふた"
+		},
+		"meaning": "two"
+	},
+	"3": {
+		"kanji": "三",
+		"pronunciation": {
+			"on-yomi": "さん",
+			"kun-yomi": "みっ"
+		},
+		"meaning": "three"
+	},
+	"4": {
+		"kanji": "四",
+		"pronunciation": {
+			"on-yomi": "し",
+			"kun-yomi": "よん、よ、よっ"
+		},
+		"meaning": "four"
+	},
+	"5": {
+		"kanji": "五",
+		"pronunciation": {
+			"on-yomi": "ご",
+			"kun-yomi": "いつ"
+		},
+		"meaning": "five"
+	},
+	"6": {
+		"kanji": "六",
+		"pronunciation": {
+			"on-yomi": "ろく、ろっ",
+			"kun-yomi": "むっ"
+		},
+		"meaning": "six"
+	},
+	"7": {
+		"kanji": "七",
+		"pronunciation": {
+			"on-yomi": "しち",
+			"kun-yomi": "なな"
+		},
+		"meaning": "seven"
+	},
+	"8": {
+		"kanji": "八",
+		"pronunciation": {
+			"on-yomi": "はち、はっ",
+			"kun-yomi": "やっ"
+		},
+		"meaning": "eight"
+	},
+	"9": {
+		"kanji": "九",
+		"pronunciation": {
+			"on-yomi": "きゅう、く",
+			"kun-yomi": "ここの"
+		},
+		"meaning": "nine"
+	},
+	"10": {
+		"kanji": "十",
+		"pronunciation": {
+			"on-yomi": "じゅう、じゅっ、じっ",
+			"kun-yomi": "とお"
+		},
+		"meaning": "ten"
+	},
+	"11": {
+		"kanji": "百",
+		"pronunciation": {
+			"on-yomi": "ひゃく、びゃく、ぴゃく",
+			"kun-yomi": ""
+		},
+		"meaning": "hundred"
+	},
+	"12": {
+		"kanji": "千",
+		"pronunciation": {
+			"on-yomi": "せん、ぜん",
+			"kun-yomi": ""
+		},
+		"meaning": "thousand"
+	},
+	"13": {
+		"kanji": "万",
+		"pronunciation": {
+			"on-yomi": "まん",
+			"kun-yomi": ""
+		},
+		"meaning": "ten thousand"
+	},
+	"14": {
+		"kanji": "円",
+		"pronunciation": {
+			"on-yomi": "えん",
+			"kun-yomi": "まる"
+		},
+		"meaning": "yen; circle"
+	},
+	"15": {
+		"kanji": "時",
+		"pronunciation": {
+			"on-yomi": "じ",
+			"kun-yomi": "とき"
+		},
+		"meaning": "time"
+	}
+}

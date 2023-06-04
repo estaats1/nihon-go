@@ -1,0 +1,616 @@
+[gd_scene load_steps=43 format=3 uid="uid://dbp8f1axay2f0"]
+
+[ext_resource type="Script" path="res://scripts/banner_screen.gd" id="1_i2xdo"]
+[ext_resource type="StyleBox" uid="uid://d00ynroi8enaa" path="res://buttons/banner_pull_button.tres" id="2_afd48"]
+[ext_resource type="Texture2D" uid="uid://dv25i2oc2d7ee" path="res://assets/coins.png" id="2_ocpgt"]
+[ext_resource type="Texture2D" uid="uid://bajnnbk2lanb3" path="res://assets/Char3.png" id="3_2s1o5"]
+[ext_resource type="Texture2D" uid="uid://bbmk80ti6aig1" path="res://assets/item1.png" id="3_k1g3j"]
+[ext_resource type="StyleBox" uid="uid://dgkak76a8ahtn" path="res://buttons/char_button.tres" id="3_moe28"]
+[ext_resource type="Texture2D" uid="uid://dqwgcldvxvkw0" path="res://assets/item2.png" id="4_2u7nl"]
+[ext_resource type="Texture2D" uid="uid://5t6ptutgoyu4" path="res://assets/Char6.png" id="4_mftql"]
+[ext_resource type="StyleBox" uid="uid://dmwro07qkhike" path="res://buttons/char_button_hover.tres" id="4_plr3j"]
+[ext_resource type="Texture2D" uid="uid://btbcoywgj6pof" path="res://assets/Char9.png" id="5_jyjbk"]
+[ext_resource type="Texture2D" uid="uid://daxd8xjambhkv" path="res://assets/item3.png" id="5_qyg30"]
+[ext_resource type="Texture2D" uid="uid://cn5pbwwyojgh0" path="res://assets/tickets.png" id="6_3s0aa"]
+[ext_resource type="Texture2D" uid="uid://dklucwjjcwlfs" path="res://assets/Char1.png" id="6_ne1d7"]
+[ext_resource type="Texture2D" uid="uid://b71nca7xsv22e" path="res://assets/Char4.png" id="7_ymcg6"]
+[ext_resource type="Texture2D" uid="uid://j8mgfcvk8iy4" path="res://assets/Char7.png" id="8_dea8c"]
+[ext_resource type="Texture2D" uid="uid://d4w2rciedt7w" path="res://assets/Char10.png" id="9_obvbj"]
+[ext_resource type="Texture2D" uid="uid://nho3xyhdq0vi" path="res://assets/Char2.png" id="10_nb8td"]
+[ext_resource type="Texture2D" uid="uid://b1rhovn6hld5r" path="res://assets/Char5.png" id="11_t1pht"]
+[ext_resource type="Texture2D" uid="uid://dykr1g4twqj6g" path="res://assets/Char12.png" id="11_v6dq2"]
+[ext_resource type="Texture2D" uid="uid://c3ixkgst6sgiq" path="res://assets/Char8.png" id="12_id2vm"]
+[ext_resource type="Texture2D" uid="uid://dju54ejyvg8m4" path="res://assets/Char11.png" id="19_8oty1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxwq0"]
+bg_color = Color(0, 0.196078, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0.0980392, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2yubw"]
+bg_color = Color(0, 0.752941, 0.113725, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0.54902, 0.0705882, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ndh0"]
+bg_color = Color(0.160784, 0.25098, 0.176471, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j0ssj"]
+bg_color = Color(0, 0.752941, 0.113725, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0.54902, 0.0705882, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65qnj"]
+bg_color = Color(0.1625, 0.25, 0.175625, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3om5"]
+bg_color = Color(0.196078, 0, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.0980392, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5kqoc"]
+bg_color = Color(0.992157, 0, 0.184314, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.486275, 0, 0.0666667, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p7w15"]
+bg_color = Color(0.811765, 0, 0.141176, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.486275, 0, 0.0666667, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mupc1"]
+bg_color = Color(0.992157, 0, 0.184314, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.486275, 0, 0.0666667, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxt8o"]
+bg_color = Color(0.25, 0.1625, 0.177083, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i7y6r"]
+bg_color = Color(0.811765, 0, 0.141176, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.486275, 0, 0.0666667, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m33yi"]
+bg_color = Color(0.25, 0.1625, 0.177083, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4dxf"]
+bg_color = Color(0, 0, 0.196078, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0.0980392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_meqcm"]
+bg_color = Color(0.294118, 0.376471, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.184314, 0, 0.909804, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3j0ce"]
+bg_color = Color(0.211765, 0.117647, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.184314, 0, 0.909804, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gto5k"]
+bg_color = Color(0.294118, 0.376471, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.184314, 0, 0.909804, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_htqh4"]
+bg_color = Color(0.17125, 0.1625, 0.25, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myln0"]
+bg_color = Color(0.17125, 0.1625, 0.25, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfkn1"]
+bg_color = Color(0.552941, 1, 0.537255, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yuufs"]
+bg_color = Color(0.317647, 1, 0.329412, 1)
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_stq8h"]
+bg_color = Color(0.552941, 1, 0.537255, 1)
+corner_radius_top_right = 50
+
+[node name="BannerScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_i2xdo")
+
+[node name="ItemBar" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1928.0
+offset_bottom = 40.0
+
+[node name="CoinsLabel" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 57.0
+offset_top = 1.0
+offset_right = 134.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Coins: "
+
+[node name="Coins" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 138.0
+offset_top = 1.0
+offset_right = 288.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="Item1Label" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 446.0
+offset_top = 1.0
+offset_right = 526.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Roses: "
+
+[node name="Item1" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 530.0
+offset_top = 1.0
+offset_right = 680.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="Item2Label" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 838.0
+offset_top = 1.0
+offset_right = 918.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Snowflakes: "
+
+[node name="Item2" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 922.0
+offset_top = 1.0
+offset_right = 1072.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="Item3Label" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 1230.0
+offset_top = 1.0
+offset_right = 1310.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Hearts: "
+
+[node name="Item3" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 1314.0
+offset_top = 1.0
+offset_right = 1464.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="TicketLabel" type="Label" parent="ItemBar"]
+layout_mode = 2
+offset_left = 1622.0
+offset_top = 1.0
+offset_right = 1717.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "Tickets: "
+
+[node name="Tickets" type="Label" parent="ItemBar" groups=["Persist"]]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_left = 1721.0
+offset_top = 1.0
+offset_right = 1871.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="coin" type="Sprite2D" parent="ItemBar"]
+position = Vector2(25, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_ocpgt")
+
+[node name="rose" type="Sprite2D" parent="ItemBar"]
+position = Vector2(425, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_k1g3j")
+
+[node name="snowflake" type="Sprite2D" parent="ItemBar"]
+position = Vector2(815, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_2u7nl")
+
+[node name="heart" type="Sprite2D" parent="ItemBar"]
+position = Vector2(1205, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_qyg30")
+
+[node name="ticket" type="Sprite2D" parent="ItemBar"]
+position = Vector2(1600, 20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("6_3s0aa")
+
+[node name="Banners" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 930)
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 0
+offset_top = 44.0
+offset_right = 1928.0
+offset_bottom = 974.0
+
+[node name="Support" type="Label" parent="Banners"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+offset_left = 26.0
+offset_right = 626.0
+offset_bottom = 930.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_fxwq0")
+text = "Support Banner"
+horizontal_alignment = 1
+
+[node name="1PullSup" type="Button" parent="Banners/Support"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 30.0
+offset_top = 750.0
+offset_right = 280.0
+offset_bottom = 900.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("2_afd48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2yubw")
+theme_override_styles/pressed = ExtResource("2_afd48")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0ndh0")
+theme_override_styles/focus = ExtResource("2_afd48")
+text = "1 Pull"
+
+[node name="10PullSup" type="Button" parent="Banners/Support"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 320.0
+offset_top = 750.0
+offset_right = 570.0
+offset_bottom = 900.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("2_afd48")
+theme_override_styles/hover = SubResource("StyleBoxFlat_j0ssj")
+theme_override_styles/pressed = ExtResource("2_afd48")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_65qnj")
+theme_override_styles/focus = ExtResource("2_afd48")
+text = "10 Pull"
+
+[node name="Char3" type="Sprite2D" parent="Banners/Support"]
+position = Vector2(150, 250)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_2s1o5")
+
+[node name="Char6" type="Sprite2D" parent="Banners/Support"]
+position = Vector2(450, 250)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_mftql")
+
+[node name="Char9" type="Sprite2D" parent="Banners/Support"]
+position = Vector2(150, 550)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_jyjbk")
+
+[node name="Char12" type="Sprite2D" parent="Banners/Support"]
+position = Vector2(450, 550)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("11_v6dq2")
+
+[node name="Damage" type="Label" parent="Banners"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+offset_left = 664.0
+offset_right = 1264.0
+offset_bottom = 930.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_d3om5")
+text = "DPS Banner"
+horizontal_alignment = 1
+
+[node name="1PullDam" type="Button" parent="Banners/Damage"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 30.0
+offset_top = 750.0
+offset_right = 280.0
+offset_bottom = 900.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_5kqoc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7w15")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mupc1")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_kxt8o")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mupc1")
+text = "1 Pull"
+
+[node name="10PullDam" type="Button" parent="Banners/Damage"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 320.0
+offset_top = 750.0
+offset_right = 570.0
+offset_bottom = 900.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_5kqoc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i7y6r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mupc1")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_m33yi")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mupc1")
+text = "10 Pull"
+
+[node name="Char1" type="Sprite2D" parent="Banners/Damage"]
+position = Vector2(150, 250)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_ne1d7")
+
+[node name="Char4" type="Sprite2D" parent="Banners/Damage"]
+position = Vector2(450, 250)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_ymcg6")
+
+[node name="Char7" type="Sprite2D" parent="Banners/Damage"]
+position = Vector2(150, 550)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_dea8c")
+
+[node name="Char10" type="Sprite2D" parent="Banners/Damage"]
+position = Vector2(450, 550)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("9_obvbj")
+
+[node name="Debuff" type="Label" parent="Banners"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+offset_left = 1302.0
+offset_right = 1902.0
+offset_bottom = 930.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_g4dxf")
+text = "Debuffer Banner"
+horizontal_alignment = 1
+
+[node name="1PullDeb" type="Button" parent="Banners/Debuff"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 31.0
+offset_top = 754.0
+offset_right = 281.0
+offset_bottom = 904.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_meqcm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3j0ce")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gto5k")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_htqh4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gto5k")
+text = "1 Pull"
+
+[node name="10PullDeb" type="Button" parent="Banners/Debuff"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 319.0
+offset_top = 754.0
+offset_right = 569.0
+offset_bottom = 904.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_meqcm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3j0ce")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gto5k")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_myln0")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gto5k")
+text = "10 Pull"
+
+[node name="Char2" type="Sprite2D" parent="Banners/Debuff"]
+position = Vector2(150, 250)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("10_nb8td")
+
+[node name="Char5" type="Sprite2D" parent="Banners/Debuff"]
+position = Vector2(450, 250)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("11_t1pht")
+
+[node name="Char8" type="Sprite2D" parent="Banners/Debuff"]
+position = Vector2(150, 550)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_id2vm")
+
+[node name="Char11" type="Sprite2D" parent="Banners/Debuff"]
+position = Vector2(450, 550)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("19_8oty1")
+
+[node name="ButtomButtons" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 3
+anchors_preset = 0
+offset_top = 978.0
+offset_right = 1928.0
+offset_bottom = 1078.0
+
+[node name="LevelsButton" type="Button" parent="ButtomButtons"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_right = 250.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_tfkn1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yuufs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_stq8h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_stq8h")
+text = "Levels"
+
+[node name="CharButton" type="Button" parent="ButtomButtons"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+offset_left = 1670.0
+offset_right = 1920.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("3_moe28")
+theme_override_styles/hover = ExtResource("4_plr3j")
+theme_override_styles/pressed = ExtResource("3_moe28")
+theme_override_styles/focus = ExtResource("3_moe28")
+text = "Characters"
+
+[connection signal="pressed" from="Banners/Support/1PullSup" to="." method="_on_1_pull_supp_pressed"]
+[connection signal="pressed" from="Banners/Support/10PullSup" to="." method="_on_10_pull_supp_pressed"]
+[connection signal="pressed" from="Banners/Damage/1PullDam" to="." method="_on_1_pull_dam_pressed"]
+[connection signal="pressed" from="Banners/Damage/10PullDam" to="." method="_on_10_pull_dam_pressed"]
+[connection signal="pressed" from="Banners/Debuff/1PullDeb" to="." method="_on_1_pull_deb_pressed"]
+[connection signal="pressed" from="Banners/Debuff/10PullDeb" to="." method="_on_10_pull_deb_pressed"]
+[connection signal="pressed" from="ButtomButtons/LevelsButton" to="." method="_on_levels_button_pressed"]
+[connection signal="pressed" from="ButtomButtons/CharButton" to="." method="_on_char_button_pressed"]
