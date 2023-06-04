@@ -1,0 +1,92 @@
+[gd_scene load_steps=8 format=3 uid="uid://buyuiyg3qjj68"]
+
+[ext_resource type="Script" path="res://banners/1_pull_sup.gd" id="1_ocvr6"]
+[ext_resource type="Texture2D" uid="uid://dv25i2oc2d7ee" path="res://assets/coins.png" id="2_807cy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nevcn"]
+bg_color = Color(0, 0.235294, 0, 1)
+border_width_left = 100
+border_width_top = 100
+border_width_right = 100
+border_width_bottom = 100
+border_color = Color(0, 0.117647, 0, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cd0bu"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_da0di"]
+bg_color = Color(0.788235, 0.647059, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ix6aj"]
+bg_color = Color(0.572549, 0.466667, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gfa6n"]
+bg_color = Color(0.788235, 0.647059, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="1_pull_supp" type="Node2D"]
+script = ExtResource("1_ocvr6")
+
+[node name="Background" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 200.0
+offset_right = 1720.0
+offset_bottom = 880.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nevcn")
+
+[node name="Result" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_807cy")
+
+[node name="Amount" type="Label" parent="Result"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_cd0bu")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Return" type="Button" parent="."]
+offset_left = 760.0
+offset_top = 980.0
+offset_right = 1160.0
+offset_bottom = 1080.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_da0di")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ix6aj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gfa6n")
+text = "Return to Banners"
+icon_alignment = 1
+
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]

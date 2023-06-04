@@ -1,0 +1,299 @@
+[gd_scene load_steps=8 format=3 uid="uid://8ewqpbgbahjy"]
+
+[ext_resource type="Script" path="res://banners/10_pull_deb.gd" id="1_nkvgi"]
+[ext_resource type="Texture2D" uid="uid://dv25i2oc2d7ee" path="res://assets/coins.png" id="2_eires"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d8s4t"]
+bg_color = Color(0, 0, 0.235294, 1)
+border_width_left = 100
+border_width_top = 100
+border_width_right = 100
+border_width_bottom = 100
+border_color = Color(0, 0, 0.117647, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hiue8"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dnrkp"]
+bg_color = Color(0.788235, 0.647059, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pgtdq"]
+bg_color = Color(0.572549, 0.466667, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0t716"]
+bg_color = Color(0.788235, 0.647059, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="10_pull_deb" type="Node2D"]
+script = ExtResource("1_nkvgi")
+
+[node name="Background" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 1820.0
+offset_bottom = 980.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_d8s4t")
+
+[node name="Result1" type="Sprite2D" parent="."]
+position = Vector2(325, 350)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount1" type="Label" parent="Result1"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result2" type="Sprite2D" parent="."]
+position = Vector2(642.5, 350)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount2" type="Label" parent="Result2"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result3" type="Sprite2D" parent="."]
+position = Vector2(960, 350)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount3" type="Label" parent="Result3"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result4" type="Sprite2D" parent="."]
+position = Vector2(1277.5, 350)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount4" type="Label" parent="Result4"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result5" type="Sprite2D" parent="."]
+position = Vector2(1595, 350)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount5" type="Label" parent="Result5"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result6" type="Sprite2D" parent="."]
+position = Vector2(325, 730)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount6" type="Label" parent="Result6"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result7" type="Sprite2D" parent="."]
+position = Vector2(642.5, 730)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount7" type="Label" parent="Result7"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result8" type="Sprite2D" parent="."]
+position = Vector2(960, 730)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount8" type="Label" parent="Result8"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result9" type="Sprite2D" parent="."]
+position = Vector2(1277.5, 730)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount9" type="Label" parent="Result9"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result10" type="Sprite2D" parent="."]
+position = Vector2(1595, 730)
+scale = Vector2(2, 2)
+texture = ExtResource("2_eires")
+
+[node name="Amount10" type="Label" parent="Result10"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_hiue8")
+text = "x10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Return" type="Button" parent="."]
+offset_left = 760.0
+offset_top = 980.0
+offset_right = 1160.0
+offset_bottom = 1080.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_dnrkp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pgtdq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0t716")
+text = "Return to Banners"
+icon_alignment = 1
+
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]
